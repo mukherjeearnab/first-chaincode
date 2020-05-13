@@ -57,7 +57,7 @@ func (cc *Chaincode) createAsset(stub shim.ChaincodeStubInterface, params []stri
 	if len(params[1]) <= 0 {
 		return shim.Error("2nd argument must be a non-empty string")
 	}
-	if len(params[3]) <= 0 {
+	if len(params[2]) <= 0 {
 		return shim.Error("3rd argument must be a non-empty string")
 	}
 
